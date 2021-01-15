@@ -6,9 +6,13 @@ body {
 }
 
 .responsive {
-    width: auto;
+    width: 100%;
     height: auto;
   }
+
+h2{
+  text-align: center;
+}  
  
  /* HEADER */
 
@@ -30,7 +34,7 @@ body {
     overflow: hidden;
     padding: 20px 200px;
     transition: 0.4s;
-    position: fixed;
+    position: aboslute;
     width: 100%;
     z-index: 99;
   }
@@ -51,9 +55,42 @@ body {
     padding-top: 50px;
   }
 
+/* HERO */
 
-section{
-    display: inline-block;
+.hero{
+  background-image: url('../img/hero.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 100px;
+}
+
+.hero-text{
+  text-align: center;
+  color:white;
+}
+
+.hero button{
+  border-radius: 10px;
+}
+
+.contrato{
+  background-color:#D8D200 ;
+  font-weight: bold;
+  width: 150px;
+}
+.Especificaciones{
+  margin: 20px;
+  background-color: transparent !important;
+  border-color: white;
+}
+
+.Especificaciones a{
+  font-weight: bold;
+  width: 150px;
+  color: white;
 }
   
   @media screen and (max-width: 665px) {
@@ -71,5 +108,8 @@ section{
     }
     #navbar img{
         margin: auto;
+    }
+    .hero-text{
+      font-size: 1.5em;
     }
   }
