@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 body { 
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    float: left;
+    width: 100%;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
 }
 
 .responsive {
@@ -47,6 +55,7 @@ h2{
     text-decoration: none;
     line-height: 25px;
     border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
   }
    
   
@@ -92,7 +101,118 @@ h2{
   width: 150px;
   color: white;
 }
-  
+
+/* DISEÑO WEB */
+
+#web h2, #grafico h2{
+  padding: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  color: #134c69;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #134c69;
+  color: white;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #D8D200;
+  border: none;
+  color: #134c69;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.price-descrip{
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.descuento{
+  color:rgb(17, 109, 17);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/*CLIENTES*/
+.clientes{
+  text-align: center;
+  background-color: #5f5f5f;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  color: #D8D200;
+  font-size: 30px;
+}
+ 
+#grafico{
+  float: left;
+  width: 100%;
+}
+
+#grafico, #grafico p{
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*CONTACTO*/
+#contacto{
+  background-color:#5f5f5f;
+  float: left;
+  width: 100%;
+}
+
+#contacto h2{
+  color: white;
+  padding: 20px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#contacto .columns-contacto{
+  width:50%;
+  float: left;
+}
+
   @media screen and (max-width: 665px) {
     #navbar {
       padding: 20px 10px !important;
@@ -111,5 +231,8 @@ h2{
     }
     .hero-text{
       font-size: 1.5em;
+    }
+    .columns {
+      width: 100%;
     }
   }
