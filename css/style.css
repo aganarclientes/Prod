@@ -21,7 +21,10 @@ li{
 h2{
   text-align: center;
 }  
- 
+ a{
+   text-decoration: none;
+ }
+
  /* HEADER */
 
  .header {
@@ -79,6 +82,11 @@ h2{
 .hero-text{
   text-align: center;
   color:white;
+  font-size: 1rem;
+}
+
+.hero-text h1{
+  font-size: 4rem;
 }
 
 .hero button{
@@ -107,7 +115,7 @@ h2{
 #web h2, #grafico h2{
   padding: 30px;
   font-family: 'Raleway', sans-serif;
-  font-size: 50px;
+  font-size: 3rem;
   color: #134c69;
 }
 
@@ -199,20 +207,77 @@ h2{
   background-color:#5f5f5f;
   float: left;
   width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #contacto h2{
-  color: white;
+  color: #D8D200;
   padding: 20px;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 
 #contacto .columns-contacto{
   width:50%;
   float: left;
+  color: white;
 }
 
+.columns-contacto h3{
+  font-size: 2em;
+  display: inline;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, input[type=Email], input[type=number] {
+  width: 80%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 15px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #134c69;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.redes-sociales{
+  width: 100%;
+  text-align: center;
+  float: left;
+}
+
+.redes-sociales a{
+  color: black;
+}
+
+
+i{
+  padding: 10px;
+}
   @media screen and (max-width: 665px) {
     #navbar {
       padding: 20px 10px !important;
@@ -229,10 +294,23 @@ h2{
     #navbar img{
         margin: auto;
     }
-    .hero-text{
-      font-size: 1.5em;
+    .hero-text h1 {
+      font-size: 4rem;
     }
     .columns {
       width: 100%;
+    }
+    #contacto .columns-contacto{
+      width:100%;
+    }
+    input[type=text], select, textarea, input[type=Email], input[type=number] {
+      width: 100%; 
+    }
+    .columns-contacto h3{
+      font-size: 1.5em;
+      display: inline;
+    }
+    .hero{
+      padding: 80px 0px;
     }
   }

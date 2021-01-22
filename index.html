@@ -15,6 +15,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font-Awesone -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
@@ -27,12 +32,12 @@
         <a class="active" href="#home">INICIO</a>
         <a href="#web">DISEÑO WEB</a>
         <a href="#grafico">DISEÑO GRÁFICO</a>
-        <a href="#soporte">SOPORTE</a>
+        <a href="#contacto">SOPORTE</a>
       </div>
     </div>
     <div class="hero">
       <div class="hero-text">
-        <h1 style="font-size:70px;">DISEÑO WEB <br> DESDE $6900</h1>
+        <h1>DISEÑO WEB <br> DESDE $6900</h1>
         <p>Somos una empresa enfocada 100% en <br>lo que nuestros clientes necesitan para <br>desarrollar su marca en internet</p>
         <button class="contrato"><a href="">Lo contrato</a></button>  <button class="Especificaciones"><a href="">Especificaciones</a></button>
         <p style="font-family: 'Raleway', sans-serif;"><strong>Aprovechá la promo LIMITADA</strong></p>
@@ -99,16 +104,44 @@
         <li>Logos, Plegables, Volantes, Flyers</li>
         <li>Merchandisin, Carpetas, Tarjetas de Presentación</li>
         <li>Tarjetas para celebraciones y Eventos</li>
-        <li>Imágenes para redes sociales, Feed de instagram</li>
+        <li>Imágenes para redes sociales, Feed de instagram, etc</li>
       </ul>
   </div>
   <div id="contacto">
     <h2>CONTACTO</h2>
+    <div class="container columns-contacto">
+      <form action="action_page.php">
+        <input type="text" id="fname" name="firstname" placeholder="Nombre..">
+        <input type="text" id="lname" name="lastname" placeholder="Apellido..">
+        <input type="Email" id="Email" name="Email" placeholder="Email..">
+        <select id="producto" name="producto">
+          <option value="australia">Diseño Web</option>
+          <option value="canada">Diseño Gráfico</option>
+          <option value="usa">Otra Consulta</option>
+        </select>
+        <textarea id="subject" name="subject" placeholder="Mensaje" style="height:200px"></textarea>
+        <div class="g-recaptcha" data-sitekey="6LfSDTQaAAAAAFOpUbzDXLUtir7EB3QVRsfC9Tlc"></div>
+        <input type="submit" value="Enviar">
+    
+      </form>
+    </div>
       <div class="columns-contacto">
-          <h4>fefelfe</h4>
+          <h4>
+          A los pocos minutos de haber enviado el formularios,
+          nos pondremos en contacto con usted vía mail para que pueda
+          evacuar todas las dudas que tenga
+        </h4>
+        <h4>
+          En caso de no usar Email de manera frecuente, les dejamos el siguiente número
+          telefónico para que pueda enviarnos un mensaje por whatsapp
+        </h4>
+        <img src="img/whatsApp-logo.png" alt="whatsapp-agc" class="responsive"  style="width:70px" >
+        <h3>  +54-9-1137800729</h3>
       </div>
-      <div class="columns-contacto">
-          <h4>fefelscscsfe</h4>
+      <div class="redes-sociales">
+        <a href="https://www.google.com.ar/" target="_blank"><i class="fa fa-instagram" style="font-size:48px;"></i></a>
+        <a href="https://www.google.com.ar/" target="_blank"><i class="fa fa-facebook" style="font-size:48px;"></i></a>
+        <a href="https://www.google.com.ar/" target="_blank"><i class="fa fa-twitter" style="font-size:48px;"></i></a>
       </div>
   </div>
   </body>
