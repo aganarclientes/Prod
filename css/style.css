@@ -123,6 +123,7 @@ h2{
   float: left;
   width: 33.3%;
   padding: 8px;
+  text-align: center;
 }
 
 .price {
@@ -194,9 +195,10 @@ h2{
 #grafico{
   float: left;
   width: 100%;
+  padding: 20px 10px
 }
 
-#grafico, #grafico p{
+#grafico, #grafico li{
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -223,6 +225,7 @@ h2{
   width:50%;
   float: left;
   color: white;
+  text-align: justify;
 }
 
 .columns-contacto h3{
@@ -268,16 +271,35 @@ input[type=submit]:hover {
   width: 100%;
   text-align: center;
   float: left;
+  padding: 50px 10px;
 }
 
 .redes-sociales a{
   color: black;
 }
 
-
 i{
   padding: 10px;
 }
+
+/*Politica de Privacidad */
+footer{
+  background-color: black;
+  float: left;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 15px 10px;
+}
+
+footer a{
+  color: white;
+  text-decoration: underline;
+
+}
+
+
   @media screen and (max-width: 665px) {
     #navbar {
       padding: 20px 10px !important;
