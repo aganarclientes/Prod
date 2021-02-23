@@ -94,7 +94,7 @@
       </ul>
     </div>
     <div class="clientes">
-      <h3>Y Morir Queriendo Ser Libre..."</h3>
+      <h3>¡Por fin! La solución que todos puedan tener su página a un precio accesible</h3>
     </div>
     <div class="grafico" id="grafico">
       <h2>DISEÑO GRÁFICO</h2>
@@ -109,18 +109,18 @@
   <div id="contacto">
     <h2>CONTACTO</h2>
     <div class="container columns-contacto">
-      <form action="enviar.php">
-        <input type="text" id="fname" name="Nombre" placeholder="Nombre..">
-        <input type="text" id="lname" name="Apellido" placeholder="Apellido..">
-        <input type="Email" id="Email" name="Email" placeholder="Email..">
-        <select id="producto" name="Producto">
+      <form action="enviar.php" method="post">
+        <input type="text" id="fname" name="Nombre" placeholder="Nombre.." required>
+        <input type="text" id="lname" name="Apellido" placeholder="Apellido.." required>
+        <input type="Email" id="Email" name="Email" placeholder="Email.." required>
+        <select id="producto" name="Producto" required>
           <option value="Diseño Web">Diseño Web</option>
           <option value="Diseño Gráfico">Diseño Gráfico</option>
           <option value="Otra Consulta">Otra Consulta</option>
         </select>
-        <textarea id="subject" name="Mensaje" placeholder="Mensaje" style="height:200px"></textarea>
-        <!--<div class="g-recaptcha" data-sitekey="6LfSDTQaAAAAAFOpUbzDXLUtir7EB3QVRsfC9Tlc"></div>-->
-        <input type="submit" value="Enviar">
+        <textarea id="subject" name="Mensaje" placeholder="Mensaje" style="height:200px" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6Lc9aV4aAAAAAJ--lnwPCqqBo1QUo-BvVAJkwsaK"></div>
+        <input type="submit" value="Enviar" id="boton-form">
     
       </form>
     </div>
