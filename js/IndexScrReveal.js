@@ -12,7 +12,7 @@ window.sr = ScrollReveal();
         distance : '400px'
     });
 
-    sr.reveal('#navbar-right, .columns', {
+    sr.reveal('#navbar-right, .columns1', {
         duration: 4000,
         origin: 'right',
         distance : '400px'
@@ -24,6 +24,6 @@ window.sr = ScrollReveal();
         distance : '300px'
     });
 
-    sr.reveal('.hero-text', {
+    sr.reveal('.hero-text , .columns-contacto', {
         duration: 4000
     });
