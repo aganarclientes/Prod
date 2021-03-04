@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -75,7 +76,6 @@ h2{
 
 .hero{
   background-image: url('../img/hero.jpg');
- //* height: 900px;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,12 +240,12 @@ h2{
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea, input[type=Email], input[type=number] {
-  width: 80%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  width: 80%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
   background: transparent;
   border: 0;
   border-bottom: 1px solid;
@@ -278,7 +278,7 @@ input[type=submit]:hover {
 
 .g-recaptcha{
   text-align: center;
-  margin: auto 45%;
+  margin: auto 40%;
 }
 
 /* Add a background color and some padding around the form */
@@ -377,4 +377,8 @@ footer a{
       width: 100px;
       margin: auto -10%;
     }
+    .hero-text{
+      padding: 100px 20px;
+    }
+    
   }
