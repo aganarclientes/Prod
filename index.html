@@ -32,7 +32,7 @@
       <p>+5491137800729 | info@aganarclientes.com.ar</p>
     </div>
     <div id="navbar">
-      <img src="img/logo.webp" alt="Logo aganarclientes" class="logo">
+      <img src="img/logo.png" alt="Logo aganarclientes" class="logo">
       <div id="navbar-right">
         <a class="active" href="index.html">INICIO</a>
         <a href="#web">DISEÑO WEB</a>
@@ -44,7 +44,9 @@
       <div class="hero-text">
         <h1>DISEÑO WEB <br> DESDE $5999</h1>
         <p>Somos una empresa enfocada 100% en <br>lo que nuestros clientes necesitan para <br>desarrollar su marca en internet</p>
-        <button class="contrato"><a href="">Lo contrato</a></button>  <button class="Especificaciones"><a href="">Especificaciones</a></button>
+        <button class="contrato"><a href="#contacto">Lo contrato</a></button>  <button class="Especificaciones"><a href="#web">Especificaciones</a></button>
+        <br>
+        <br>
         <p style="font-family: 'Raleway', sans-serif;"><strong>Aprovechá la promo LIMITADA</strong></p>
       </div>
     </div>
@@ -115,7 +117,7 @@
   <div id="contacto">
     <h2>CONTACTO</h2>
     <div class="container columns-contacto">
-      <form action="enviar.php" method="post">
+      <form action="enviar.php" method="post" onsubmit="return evitarSpam();">
         <input type="text" id="fname" name="Nombre" placeholder="Nombre.." required>
         <input type="text" id="lname" name="Apellido" placeholder="Apellido.." required>
         <input type="Email" id="Email" name="Email" placeholder="Email.." required>
@@ -126,7 +128,14 @@
           <option value="Otra Consulta">Otra Consulta</option>
         </select>
         <textarea id="subject" name="Mensaje" placeholder="Mensaje" style="height:200px" required></textarea>
-        <div class="g-recaptcha" data-sitekey="6Lc9aV4aAAAAAJ--lnwPCqqBo1QUo-BvVAJkwsaK" ></div>
+        <!-- no deja avanzar a spam -->
+        <div id="spam" style="display: none;">
+            <label>Dejar esto en blanco</label>
+            <input type="text" id="dejarenblanco" name="dejarenblanco" />
+            <label>No cambiar esto</label>
+            <input type="text" value="http://" name="nocambiar" />
+        </div>
+
         <input type="submit" value="Enviar" id="boton-form">    
       </form>
         <h4>
@@ -139,11 +148,7 @@
         telefónico para que pueda enviarnos un mensaje por whatsapp
       </h4>
       <div>
-        <picture class="whatsapp-logo">
-          <source srcset="img/whatsApp-logo1.webp" type="image7webp">
-          <source srcset="img/whatsApp-logo1.webp" type="image7webp">
-          <img src="img/whatsApp-logo1.webp" alt="whatsapp-agc" class="responsive" loading='lazy' style="width:70px" >
-        </picture>
+          <img src="img/whatsApp-logo1.png" alt="whatsapp-agc" class="responsive whatsapp-logo" loading='lazy' style="width:70px" >
         <h3>  +54-9-1137800729</h3>
       </div>
     </div>
@@ -165,7 +170,7 @@
       <p>Siempre acompañando a nuestros clientes a cumplir su objetivo</p>
     </div>
   </footer>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
   <script src="js/ScrollReveal.js"></script>
   <script src="js/IndexScrReveal.js"></script>
   <script>  

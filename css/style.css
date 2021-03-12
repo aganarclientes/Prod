@@ -150,12 +150,21 @@ h2{
 .contrato{
   background-color:#D8D200 ;
   font-weight: bold;
-  width: 150px;
+  width: 300px;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .Especificaciones{
-  margin: 20px;
   background-color: transparent !important;
+  width: 300px;
   border-color: white;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  margin-bottom: 20px;
 }
 
 .Especificaciones a{
