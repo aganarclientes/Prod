@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
-
+*,*:after, *:before{
+  margin: 0;
+  padding: 0;
+  -webkit-bot-sizin:  border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -26,10 +32,51 @@ li{
 h2{
   text-align: center;
 }  
+
  a{
    text-decoration: none;
  }
 
+/* PRELOADER */
+
+#contenedor_carga{
+  background-color: rgba(250, 240, 245, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#carga{
+    border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+
+#carga{
+  border: 15px solid #ccc;
+  border-top-color: #134c69;
+  border-top-style: groove;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar{
+  from { transform: rotate(0deg);}
+  to{ transform: rotate(360deg); }
+}
  /* HEADER */
 
  .header-tel {
@@ -74,8 +121,10 @@ h2{
 
 /* HERO */
 
-.hero{
+.hero{  
+  background-image: -webkit-image-set(url('../img/hero.webp') 1x);
   background-image: url('../img/hero.jpg');
+  /*background-image: url('../img/hero.jpg');*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,9 +263,9 @@ h2{
   background-color:#181616;
   float: left;
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 100px 40px;
   text-align: center;
+
 }
 
 #contacto h2{
@@ -277,8 +326,13 @@ input[type=submit]:hover {
 }
 
 .g-recaptcha{
-  text-align: center;
-  margin: auto 40%;
+  padding: auto 40%;
+  margin: 30px auto;
+}
+
+
+.whatsapp-logo{
+  vertical-align: middle;
 }
 
 /* Add a background color and some padding around the form */
@@ -380,5 +434,16 @@ footer a{
     .hero-text{
       padding: 100px 20px;
     }
-    
+  }
+  @media screen and (min-width: 666px) and (max-width: 1059px) {
+    #navbar{
+      padding: 20px 0px;
+    }
+    #navbar-right{
+      padding-right: 10px;
+    }
+    .g-recaptcha{
+      padding: auto 20%;
+      margin: 30px auto;
+    }
   }

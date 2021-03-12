@@ -10,24 +10,29 @@
     <title>A Ganar Clientes - Diseño Web y Gráfico</title>
 
     <!-- Bootstrap core CSS -->
-     <link href="css/reboot.css" rel="stylesheet">
+     <!-- <link href="css/reboot.css" rel="stylesheet">-->
 
     <!-- Custom styles for this template -->
      <link href="css/style.css" rel="stylesheet">
 
     <!-- Font-Awesone -->  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="js/ScrollReveal.js"></script>
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->  
+
+    
+    <!--<script src="js/modernizr-custom.js"></script>  --> 
   </head>
 
   <body>
+    <div id="contenedor_carga">
+      <div id="carga">
+
+      </div>
+    </div>
     <div class="header-tel">
       <p>+5491137800729 | info@aganarclientes.com.ar</p>
     </div>
     <div id="navbar">
-      <img src="img/logo.png" alt="Logo aganarclientes" class="logo">
+      <img src="img/logo.webp" alt="Logo aganarclientes" class="logo">
       <div id="navbar-right">
         <a class="active" href="index.html">INICIO</a>
         <a href="#web">DISEÑO WEB</a>
@@ -122,8 +127,7 @@
         </select>
         <textarea id="subject" name="Mensaje" placeholder="Mensaje" style="height:200px" required></textarea>
         <div class="g-recaptcha" data-sitekey="6Lc9aV4aAAAAAJ--lnwPCqqBo1QUo-BvVAJkwsaK" ></div>
-        <input type="submit" value="Enviar" id="boton-form">
-    
+        <input type="submit" value="Enviar" id="boton-form">    
       </form>
         <h4>
         A los pocos minutos de haber enviado el formularios,
@@ -134,8 +138,14 @@
         En caso de no usar Email de manera frecuente, les dejamos el siguiente número
         telefónico para que pueda enviarnos un mensaje por whatsapp
       </h4>
-      <img src="img/whatsApp-logo.png" alt="whatsapp-agc" class="responsive"  style="width:70px" >
-      <h3>  +54-9-1137800729</h3>
+      <div>
+        <picture class="whatsapp-logo">
+          <source srcset="img/whatsApp-logo1.webp" type="image7webp">
+          <source srcset="img/whatsApp-logo1.webp" type="image7webp">
+          <img src="img/whatsApp-logo1.webp" alt="whatsapp-agc" class="responsive" loading='lazy' style="width:70px" >
+        </picture>
+        <h3>  +54-9-1137800729</h3>
+      </div>
     </div>
 
       <div class="redes-sociales">
@@ -155,6 +165,17 @@
       <p>Siempre acompañando a nuestros clientes a cumplir su objetivo</p>
     </div>
   </footer>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="js/ScrollReveal.js"></script>
   <script src="js/IndexScrReveal.js"></script>
+  <script>  
+    window.onload = function(){
+        var contenedor = document.getElementById('contenedor_carga');
+
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = '0';
+    }
+  </script>
   </body>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </html>
