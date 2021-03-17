@@ -4,7 +4,7 @@
 *,*:after, *:before{
   margin: 0;
   padding: 0;
-  -webkit-bot-sizin:  border-box;
+  -webkit-bot-sizing:  border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -318,6 +318,14 @@ h2{
   margin-top: 100px;
 }
 
+select{
+  color: rgb(221, 221, 221);
+}
+
+option {
+  background-color:#000000;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea, input[type=Email], input[type=number] {
   width: 80%; 
@@ -418,6 +426,69 @@ footer a{
   background-color: black;
 }
 
+/*Flecha para hacer la pagina hacia arriba*/
+
+.go-top-container{
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  z-index: -1;
+}
+
+.go-top-button{
+  width: 0px;
+  height: 0px;
+  background: #D8D200;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+  
+.go-top-button i{
+      position: absolute;
+      font-size: 50px;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      color: white;
+      transition: .2s;
+  }
+
+.show{
+  z-index: 10;
+}  
+
+.show .go-top-button{
+  animation: popup .3s ease ease-in-out;
+  width: 70px;
+  height: 70px;
+  z-index: 11;
+}
+
+.show i{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+  50%{
+    width: 66%;
+    height: 66%;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+  }
+}
 
   @media screen and (max-width: 665px) {
     #navbar {

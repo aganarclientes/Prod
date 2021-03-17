@@ -18,15 +18,13 @@
     <!-- Font-Awesone -->  
     <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->  
 
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<script src="js/modernizr-custom.js"></script>  --> 
   </head>
 
   <body>
     <div id="contenedor_carga">
-      <div id="carga">
-
-      </div>
+      <div id="carga"></div>
     </div>
     <div class="header-tel">
       <p>+5491137800729 | info@aganarclientes.com.ar</p>
@@ -55,7 +53,7 @@
           <h2>DISEÑO WEB</h2>  
         </div>
          <div class="columns1">
-            <div>
+            <div class="mov-columns1">
               <ul class="price">
                 <li class="header">BÁSICO</li>
                 <li class="grey">$ 5.999   <span class="descuento">  20%🠋</span></li>
@@ -71,7 +69,7 @@
               </ul>
             </div>
         
-            <div>
+            <div class="mov-columns1">
               <ul class="price">
                 <li class="header" style="background-color: #D8D200; color:black">PROFESIONAL</li>
                 <li class="grey">$ 10.000</li>
@@ -87,7 +85,7 @@
               </ul>
             </div>
         
-            <div>
+            <div class="mov-columns1">
               <ul class="price">
                 <li class="header">PREMIUM</li>
                 <li class="grey">$ 14.500</li>
@@ -117,72 +115,78 @@
         <li>Tarjetas para celebraciones y Eventos</li>
         <li>Imágenes para redes sociales, Feed de instagram, etc</li>
       </ul>
-  </div>
-  <div id="contacto">
-    <h2>CONTACTO</h2>
-    <div class="container columns-contacto">
-      <form action="enviar.php" method="post" onsubmit="return evitarSpam();">
-        <input type="text" id="fname" name="Nombre" placeholder="Nombre.." required>
-        <input type="text" id="lname" name="Apellido" placeholder="Apellido.." required>
-        <input type="Email" id="Email" name="Email" placeholder="Email.." required>
-        <select id="producto" name="Producto" required>
-          <option value="Diseño Web">Seleccionar Producto</option>
-          <option value="Diseño Web">Diseño Web</option>
-          <option value="Diseño Gráfico">Diseño Gráfico</option>
-          <option value="Otra Consulta">Otra Consulta</option>
-        </select>
-        <textarea id="subject" name="Mensaje" placeholder="Mensaje" style="height:200px" required></textarea>
-        <!-- no deja avanzar a spam -->
-        <div id="spam" style="display: none;">
-            <label>Dejar esto en blanco</label>
-            <input type="text" id="dejarenblanco" name="dejarenblanco" />
-            <label>No cambiar esto</label>
-            <input type="text" value="http://" name="nocambiar" />
+    </div>
+    <div id="contacto">
+        <h2>CONTACTO</h2>
+        <div class="container columns-contacto">
+          <form action="enviar.php" method="post" onsubmit="return evitarSpam();">
+            <input type="text" id="fname" name="Nombre" placeholder="Nombre.." required>
+            <input type="text" id="lname" name="Apellido" placeholder="Apellido.." required>
+            <input type="Email" id="Email" name="Email" placeholder="Email.." required>
+            <select id="producto" name="Producto" required>
+              <option value="" disabled selected>Seleccionar Motivo</option>
+              <option value="Diseño Web">Diseño Web</option>
+              <option value="Diseño Gráfico">Diseño Gráfico</option>
+              <option value="Otra Consulta">Otra Consulta</option>
+            </select>
+            <textarea id="subject" name="Mensaje" placeholder="Mensaje" style="height:200px" required></textarea>
+            <!-- no deja avanzar a spam -->
+            <div id="spam" style="display: none;">
+                <label>Dejar esto en blanco</label>
+                <input type="text" id="dejarenblanco" name="dejarenblanco" />
+                <label>No cambiar esto</label>
+                <input type="text" value="http://" name="nocambiar" />
+            </div>
+
+            <input type="submit" value="Enviar" id="boton-form">    
+          </form>
+            <p>
+            A los pocos minutos de haber enviado el formularios,
+            nos pondremos en contacto con usted vía mail para que pueda
+            evacuar todas las dudas que tenga. <br> 
+            En caso de no usar Email de manera frecuente, les dejamos el siguiente número
+            telefónico para que pueda enviarnos un mensaje por whatsapp
+            </p>
+          <div>
+              <img src="img/whatsApp-logo1.png" alt="whatsapp-agc" class="responsive whatsapp-logo" loading='lazy' style="width:70px" >
+            <h3>  +54-9-1137800729</h3>
+          </div>
         </div>
 
-        <input type="submit" value="Enviar" id="boton-form">    
-      </form>
-        <p>
-        A los pocos minutos de haber enviado el formularios,
-        nos pondremos en contacto con usted vía mail para que pueda
-        evacuar todas las dudas que tenga. <br> 
-        En caso de no usar Email de manera frecuente, les dejamos el siguiente número
-        telefónico para que pueda enviarnos un mensaje por whatsapp
-        </p>
-      <div>
-          <img src="img/whatsApp-logo1.png" alt="whatsapp-agc" class="responsive whatsapp-logo" loading='lazy' style="width:70px" >
-        <h3>  +54-9-1137800729</h3>
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/aganarclientes" target="_blank"><i class="fa fa-instagram" style="font-size:48px;"></i></a>
+          <a href="https://www.facebook.com/aganarclientes" target="_blank"><i class="fa fa-facebook" style="font-size:48px;"></i></a>
+          <a href="https://twitter.com/aganarclientes" target="_blank"><i class="fa fa-twitter" style="font-size:48px;"></i></a>
+        </div>
+    </div>
+    <footer class="columns1">
+      <div class="mov-columns1">
+        <a href="Politicas_Privacidad.html">Términos de uso  política de privacidad</a>
+      </div>
+      <div class="mov-columns1">
+          <p>Sitio Creado por <a href="index.html">AGanarClientes</a></p>
+      </div>
+      <div class="mov-columns1">
+        <p>Siempre acompañando a nuestros clientes a cumplir su objetivo</p>
+      </div>
+    </footer>
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
       </div>
     </div>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="js/ScrollReveal.js"></script>
+    <script src="js/IndexScrReveal.js"></script>
+    <script src="js/irarriba.js"></script>
+    <script>  
+      window.onload = function(){
+          var contenedor = document.getElementById('contenedor_carga');
 
-      <div class="redes-sociales">
-        <a href="https://www.instagram.com/aganarclientes" target="_blank"><i class="fa fa-instagram" style="font-size:48px;"></i></a>
-        <a href="https://www.facebook.com/aganarclientes" target="_blank"><i class="fa fa-facebook" style="font-size:48px;"></i></a>
-        <a href="https://twitter.com/aganarclientes" target="_blank"><i class="fa fa-twitter" style="font-size:48px;"></i></a>
-      </div>
-  </div>
-  <footer class="columns1">
-    <div>
-      <a href="Politicas_Privacidad.html">Términos de uso  política de privacidad</a>
-    </div>
-    <div>
-        <p>Sitio Creado por <a href="index.html">AGanarClientes</a></p>
-    </div>
-    <div>
-      <p>Siempre acompañando a nuestros clientes a cumplir su objetivo</p>
-    </div>
-  </footer>
-  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-  <script src="js/ScrollReveal.js"></script>
-  <script src="js/IndexScrReveal.js"></script>
-  <script>  
-    window.onload = function(){
-        var contenedor = document.getElementById('contenedor_carga');
-
-        contenedor.style.visibility = 'hidden';
-        contenedor.style.opacity = '0';
-    }
-  </script>
+          contenedor.style.visibility = 'hidden';
+          contenedor.style.opacity = '0';
+      }
+    </script>
   </body>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </html>

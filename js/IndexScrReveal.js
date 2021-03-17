@@ -15,7 +15,7 @@ window.sr = ScrollReveal();
         mobile: false
     });
 
-    sr.reveal('#navbar-right, .columns1', {
+    sr.reveal('#navbar-right, .mov-columns1', {
         duration: 4000,
         origin: 'right',
         distance : '400px',
